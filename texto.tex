@@ -1,0 +1,92 @@
+\section{Projeto do controlador fuzzy do robô}
+    \subsection{Variáveis Linguísticas}
+        \begin{itemize}
+            \item{\bf{Antecedentes}}
+                \begin{itemize}
+                    \item Erro de ângulo
+                    \item Erro de posição
+                \end{itemize}
+            \item{\bf{Saídas}}
+                \begin{itemize}
+                        \item Velocidade angular
+                        \item Velocidade
+                \end{itemize}
+        \end{itemize}
+    \subsection{Funções de pertinência}
+    \begin{itemize}
+        \item{\bf{Erro de ângulo}}
+            \begin{itemize}
+                \item Universo de discurso: $[-\pi,\pi]$
+                \item Formato das funções de pertinência: Trapezoidal
+            \end{itemize}  
+            
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|c|c|c|c|c|}
+                    \hline
+                    Conjunto               & Esq   & C\_Esq & C\_Dir & Dir \\ \hline
+                    Erro Negativo Grande   & -5    & -5    & -2.5  & -2    \\
+                    Erro Negativo Pequeno  & -3    & -2    & -1    & 0     \\
+                    Erro  Nulo             & -1    & -0.5  & 0.5   & 1     \\
+                    Erro Positivo Pequeno  & 0     & 1     & 2     & 3     \\
+                    Erro Positivo Grande   & 2     & 2.5   & 5     & 5     \\ \hline
+                \end{tabular}
+            \end{table}
+            
+        \item{\bf{Erro de posição}}
+            \begin{itemize}
+                \item Universo de discurso: $[-10,10]$
+                \item Formato das funções de pertinência: Trapezoidal
+            \end{itemize}
+
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|c|c|c|c|c|}
+                    \hline
+                    Conjunto               & Esq   & C\_Esq & C\_Dir & Dir \\ \hline
+                    Erro Negativo Grande   & -10   & -10   & -2.5  & -2    \\
+                    Erro Negativo Pequeno  & -3    & -2    & -1    & 0     \\
+                    Erro  Nulo             & -1    & -0.5  & 0.5   & 1     \\
+                    Erro Positivo Pequeno  & 0     & 1     & 2     & 3     \\
+                    Erro Positivo Grande   & 2     & 2.5   & 10    & 10    \\ \hline
+                \end{tabular}
+            \end{table}
+            
+        \item{\bf{Velocidade angular}}
+            \begin{itemize}
+                \item Universo de discurso: $[-5,5]$
+                \item Formato das funções de pertinência: Trapezoidal
+            \end{itemize}
+
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|c|c|c|c|c|}
+                    \hline
+                    Conjunto               & Esq   & C\_Esq & C\_Dir & Dir \\ \hline
+                    Erro Negativo Grande   & -5    & -5    & -2.5  & -2    \\
+                    Erro Negativo Pequeno  & -3    & -2    & -1    & 0     \\
+                    Erro  Nulo             & -1    & -0.5  & 0.5   & 1     \\
+                    Erro Positivo Pequeno  & 0     & 1     & 2     & 3     \\
+                    Erro Positivo Grande   & 2     & 2.5   & 5     & 5     \\ \hline
+                \end{tabular}
+            \end{table}
+            
+        \item{\bf{Velocidade}}
+            \begin{itemize}
+                \item Universo de discurso: $[-5,5]$
+                \item Formato das funções de pertinência: Trapezoidal
+            \end{itemize}
+
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|c|c|c|c|c|}
+                    \hline
+                    Conjunto               & Esq   & C\_Esq & C\_Dir & Dir \\ \hline
+                    Erro Negativo Grande   & -5    & -5    & -2.5  & -2    \\
+                    Erro Negativo Pequeno  & -3    & -2    & -1    & 0     \\
+                    Erro  Nulo             & -1    & -0.5  & 0.5   & 1     \\
+                    Erro Positivo Pequeno  & 0     & 1     & 2     & 3     \\
+                    Erro Positivo Grande   & 2     & 2.5   & 5     & 5     \\ \hline
+                \end{tabular}
+            \end{table}
+    \end{itemize}
