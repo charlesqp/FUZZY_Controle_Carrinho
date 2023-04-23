@@ -1,0 +1,9 @@
+Essencial do relatório
+
+1) Descrissão do problema
+2) Descrissão da solução proposta em palavras
+3) "Tradução" da solução proposta para uma descrissão usando variáveis lingísticas.
+4) Conjuntos Nebulosos Associados às variáveis lingìsticas
+5) Banco de regras que representem a solução
+6) Apresentar definições de operadores implicação / defuzificador
+7) Resultados e discussão

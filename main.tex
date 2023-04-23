@@ -20,8 +20,6 @@
 \usepackage{csquotes}
 \usepackage{multicol}
 % Para plotar tabelas
-\usepackage{pgfplots}
-\usepackage{pgfplotstable}
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{colortbl}
@@ -39,12 +37,6 @@ tikz
 \usepackage{subcaption}
 \usepackage{graphicx}
 \usepackage{float}
-
-\pgfplotstableset{% global config, for example in the preamble
-  every head row/.style={before row=\toprule,after row=\midrule},
-  every last row/.style={after row=\bottomrule},
-}
-\pgfplotsset{compat=1.18}
 
 \begin{document}
 \input{00_capa} 
