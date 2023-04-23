@@ -13,14 +13,23 @@ que $v_t$ e $\omega$representam as velocidades de translação e angular do veí
 
 \section{Descrição da solução proposta}
 
-Este trabalho propõe uma forma de se controlar o sistema para que ele siga uma referência de posição desejada utilizando linguagem natural. A referência utilizada é um outro carrinho hipotético que pode ser controlado manualmente ou programado para realizar certos movimentos pré-definidos dentro de uma área especifica.
+Este trabalho propõe uma forma de se controlar o sistema para que ele siga uma referência de posição desejada utilizando linguagem natural. A referência utilizada é um outro carrinho hipotético que pode ser controlado manualmente ou programado para realizar certos movimentos pré-definidos dentro de uma área especifica. O ambiente de simulação foi provido pelo professor no ambiente moodle e abaixo pode-se observar uma figura que demonstra a aparência do simulador utilizado. O carrinho bege é a nossa referência enquanto o carrinho amarelo é o nosso carrinho a ser controlado.
+
+\begin{figure}[H] 
+    \centering
+    \includegraphics[scale=0.5]{carrinho_base.png}
+    \caption{Ambiente de simulação}
+\end{figure}
 
 O controlador implementado foi baseado na técnica de controladores fuzzy utilizando
 o método de inferência por regras de Mamdani. 
-Inicialmente, para o projeto do controlador, identificou-se as entradas e saídas do controlador. As entradas são o erro do ângulo em relação a referência (eθ) e o erro de posição do carrinho (Exy). Neste caso específico, como é desejado o equilíbrio do sistema, a
-referência será igual a 0
-o
-, ou seja,
+Inicialmente, para o projeto do controlador, identificou-se as entradas e saídas do controlador. As entradas são o erro do ângulo em relação a referência (e$\theta$) e o erro de posição do carrinho (Exy). 
+
+\begin{figure}[H] 
+    \centering
+    \includegraphics[scale=0.5]{carrinho_base.png}
+    \caption{Ambiente de simulação}
+\end{figure}
 
 \section{Projeto do controlador fuzzy do robô}
     \subsection{Variáveis Linguísticas}
